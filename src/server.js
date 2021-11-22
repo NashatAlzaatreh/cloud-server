@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5050;
 
 const notFoundHandler = require("./error-handlers/404");
 const errorHandler = require("./error-handlers/500");
